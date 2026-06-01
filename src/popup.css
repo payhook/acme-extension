@@ -1,0 +1,164 @@
+/* @payhook/extension/upgrade-button.css inlined */
+.payhook-btn {
+  --payhook-btn-bg: #3a5678;
+  --payhook-btn-bg-hover: #2c4563;
+  --payhook-btn-color: #ffffff;
+  --payhook-btn-radius: 999px;
+  --payhook-btn-font-size: 0.875rem;
+  --payhook-text-color: #2c4563;
+  font-family: inherit;
+  color: var(--payhook-text-color);
+}
+.payhook-btn__root { display: flex; flex-direction: column; gap: 0.5rem; }
+.payhook-btn__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 1.1rem;
+  border: none;
+  border-radius: var(--payhook-btn-radius);
+  font: inherit;
+  font-size: var(--payhook-btn-font-size);
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--payhook-btn-bg);
+  color: var(--payhook-btn-color);
+}
+.payhook-btn__button:hover:not(:disabled) { background: var(--payhook-btn-bg-hover); }
+.payhook-btn__button:disabled { opacity: 0.7; cursor: not-allowed; }
+.payhook-btn__message { margin: 0; font-size: 0.8125rem; }
+.payhook-btn__message--error { color: #b42318; }
+.payhook-btn__message--success { color: #027a48; }
+
+:root {
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --border: #e3e8ef;
+  --text: #1f2937;
+  --text-muted: #6c7a89;
+  --accent: #3a5678;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  width: 340px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.header {
+  padding: 14px 16px 10px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.header__sub {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.io {
+  padding: 12px 16px 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.io__label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.io textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+  background: var(--surface);
+  color: var(--text);
+}
+
+.io textarea:focus {
+  outline: 2px solid rgba(58, 86, 120, 0.25);
+  outline-offset: -1px;
+  border-color: var(--accent);
+}
+
+.tools {
+  padding: 8px 16px 12px;
+}
+
+.tools__title {
+  margin: 10px 0 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tools__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tool {
+  flex: 1 1 auto;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.tool:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.tool--pro[data-locked="true"] {
+  cursor: not-allowed;
+  opacity: 0.55;
+  position: relative;
+}
+
+.tool--pro[data-locked="true"]::after {
+  content: "🔒";
+  margin-left: 6px;
+  font-size: 11px;
+}
+
+.footer {
+  padding: 10px 16px 14px;
+  border-top: 1px solid var(--border);
+  background: var(--surface);
+  display: flex;
+  justify-content: center;
+}
+
+/* Slightly larger button in the popup. */
+.payhook-btn {
+  --payhook-btn-font-size: 0.875rem;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Acme</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Acme</h1>
+      <p class="header__sub">Text utilities</p>
+    </header>
+
+    <section class="io">
+      <label class="io__label" for="input">Input</label>
+      <textarea id="input" rows="3" placeholder="Type or paste text…"></textarea>
+      <label class="io__label" for="output">Output</label>
+      <textarea id="output" rows="3" readonly placeholder="Result appears here"></textarea>
+    </section>
+
+    <section class="tools">
+      <h2 class="tools__title">Free</h2>
+      <div class="tools__row">
+        <button class="tool" data-tool="upper">UPPERCASE</button>
+        <button class="tool" data-tool="reverse">Reverse</button>
+      </div>
+
+      <h2 class="tools__title">
+        Pro
+        <span class="tools__lock" id="lock-state" hidden>🔒</span>
+      </h2>
+      <div class="tools__row">
+        <button class="tool tool--pro" data-tool="base64" data-requires-pro>Base64</button>
+        <button class="tool tool--pro" data-tool="slug" data-requires-pro>Slug</button>
+        <button class="tool tool--pro" data-tool="title" data-requires-pro>Title Case</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div id="payhook-button"></div>
+    </footer>
+
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>

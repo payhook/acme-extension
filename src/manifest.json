@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Acme — Text utilities",
+  "version": "0.1.0",
+  "description": "Free text utilities — upgrade to unlock the Pro tools. Showcases Payhook.",
+  "permissions": ["storage", "identity", "identity.email"],
+  "host_permissions": ["https://api.payhook.link/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Acme"
+  },
+  "externally_connectable": {
+    "matches": ["https://payhook.link/*", "https://*.payhook.link/*"]
+  }
+}
