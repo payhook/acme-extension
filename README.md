@@ -1,9 +1,13 @@
 # Acme — Payhook sample extension
 
-A minimal Manifest V3 browser extension showcasing the
+A minimal Manifest V3 **cross-browser** sample extension showcasing the
 [`@payhook/extension`](https://www.npmjs.com/package/@payhook/extension)
 `UpgradeButton`. Acme is a tiny "text utilities" popup: a few free
 tools, three Pro-locked tools, and the Payhook button at the bottom.
+
+**Marketing page:** [payhook.link/acme-extension](https://payhook.link/acme-extension)
+
+This repo is a reference implementation — it is not published to the Chrome Web Store.
 
 One source tree builds for **Chrome**, **Firefox**, and **Safari**.
 
@@ -68,7 +72,7 @@ One source tree builds for **Chrome**, **Firefox**, and **Safari**.
      session while iterating.
 
 4. Click the Acme icon, paste some text, and click **Upgrade to Pro**.
-   The hosted unlock page opens; complete checkout (use Stripe's test
+   The hosted unlock page at [unlock.payhook.link](https://unlock.payhook.link) opens; complete checkout (use Stripe's test
    card `4242 4242 4242 4242` while in test mode). When you close it,
    the button flips to **Manage plan** and the Pro tools unlock.
 
@@ -119,3 +123,12 @@ dist/
 ```
 
 Drop a 128×128 PNG at `src/icon.png` to give Acme its own toolbar icon.
+
+## Related repos
+
+| Repo | Role |
+|------|------|
+| [payhook/js](https://github.com/payhook/js) | `@payhook/extension` SDK |
+| [payhook/unlock](https://github.com/payhook/unlock) | Hosted unlock pages |
+| [payhook/docs](https://github.com/payhook/docs) | Integration guide |
+| [payhook/mcp](https://github.com/payhook/mcp) | MCP server for AI-assisted integration |
