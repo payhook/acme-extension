@@ -5,7 +5,7 @@ A minimal Manifest V3 **cross-browser** sample extension showcasing the
 `UpgradeButton`. Acme is a tiny "text utilities" popup: a few free
 tools, three Pro-locked tools, and the Payhook button at the bottom.
 
-**Marketing page:** [payhook.link/acme-extension](https://payhook.link/acme-extension)
+**Marketing page:** [payhook.link/acme-extension/](https://payhook.link/acme-extension/)
 
 This repo is a reference implementation — it is not published to the Chrome Web Store.
 
