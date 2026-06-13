@@ -4,14 +4,17 @@
   "description": "Sample Chrome extension showcasing the Payhook UpgradeButton",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=26.3.0"
+  },
   "scripts": {
     "build": "node build.mjs",
     "watch": "node build.mjs --watch"
   },
   "dependencies": {
-    "@payhook/extension": "^0.2.1"
+    "@payhook/extension": "^0.3.1"
   },
   "devDependencies": {
-    "esbuild": "^0.21.0"
+    "esbuild": "^0.28.0"
   }
 }
